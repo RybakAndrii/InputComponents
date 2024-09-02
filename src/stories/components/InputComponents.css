@@ -1,0 +1,117 @@
+.input-group {
+  max-width: 200px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.input-label.small {
+  font-size: 12px;
+}
+
+.input-label.medium {
+  font-size: 16px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  padding: 8px 12px;
+  padding-left: 32px; /* Отступ для иконки поиска */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.input-default .input-text {
+  border-color: #ccc;
+}
+
+.input-hover .input-text:hover {
+  border-color: #000;
+}
+
+.input-focus .input-text:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.input-error .input-text {
+  border: 1px solid #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+.input-error-focus .input-text:focus {
+  border: 1px solid #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+.input-disabled .input-text {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  border-color: #ccc;
+}
+
+.input-annotation {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.input-icon-search {
+  position: absolute;
+  left: 8px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.input-icon-question {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.input-icon-error {
+  position: absolute;
+  right: 8px;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+body.light-mode .input-group {
+  color: #000;
+}
+
+body.dark-mode .input-group {
+  color: #fff;
+}
+
+body.dark-mode .input-text {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .input-icon-search,
+body.dark-mode .input-icon-question,
+body.dark-mode .input-icon-error {
+  color: #ccc;
+}
+
+body.dark-mode .input-annotation {
+  color: #bbb;
+}
