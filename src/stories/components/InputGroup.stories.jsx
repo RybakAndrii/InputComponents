@@ -31,7 +31,7 @@ Default.args = {
   label: "Email",
   id: "email",
   value: "",
-  placeholder: "Input ..",
+  placeholder: "Input .. ",
   annotationText: "This is a hint to help user",
   state: "default",
   size: "medium",
@@ -56,7 +56,7 @@ export const ErrorState = Template.bind({});
 ErrorState.args = {
   ...Default.args,
   state: "error",
-  annotationText: "This is a hint to help user", // Добавьте текст "Email" для состояния ошибки
+  annotationText: "This is a hint to help user",
 };
 
 export const ErrorFocus = Template.bind({});

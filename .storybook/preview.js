@@ -1,4 +1,3 @@
-// import "../src/index.css";
 import "../src/stories/components/InputComponents.css"; // Update this path if necessary
 
 const preview = {
